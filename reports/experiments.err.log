@@ -1,0 +1,75 @@
+Traceback (most recent call last):
+  File "/Users/yasx98/Library/Python/3.9/lib/python/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/Users/yasx98/Library/Python/3.9/lib/python/site-packages/nbclient/client.py", line 1314, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/Users/yasx98/Library/Python/3.9/lib/python/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/Users/yasx98/Library/Python/3.9/lib/python/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/Users/yasx98/Library/Python/3.9/lib/python/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Users/yasx98/Library/Python/3.9/lib/python/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+from matplotlib import rcParams
+
+%matplotlib inline
+
+# figure size in inches optional
+rcParams['figure.figsize'] = 16 ,10
+rcParams['figure.dpi'] = 450
+
+# read images
+img_A = mpimg.imread('figures/Orig_base_mod.png')
+img_B = mpimg.imread('figures/Synth_base_mod.png')
+
+# display images
+fig, ax = plt.subplots(1,2, gridspec_kw = {'wspace':0, 'hspace':0.5,'width_ratios': [1, 1.06]})
+
+ax[0].axis('off')
+ax[0].imshow(img_A)
+ax[1].axis('off')
+ax[1].imshow(img_B)
+x = None
+x
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mFileNotFoundError[0m                         Traceback (most recent call last)
+Cell [0;32mIn[1], line 12[0m
+[1;32m      9[0m rcParams[[38;5;124m'[39m[38;5;124mfigure.dpi[39m[38;5;124m'[39m] [38;5;241m=[39m [38;5;241m450[39m
+[1;32m     11[0m [38;5;66;03m# read images[39;00m
+[0;32m---> 12[0m img_A [38;5;241m=[39m [43mmpimg[49m[38;5;241;43m.[39;49m[43mimread[49m[43m([49m[38;5;124;43m'[39;49m[38;5;124;43mfigures/Orig_base_mod.png[39;49m[38;5;124;43m'[39;49m[43m)[49m
+[1;32m     13[0m img_B [38;5;241m=[39m mpimg[38;5;241m.[39mimread([38;5;124m'[39m[38;5;124mfigures/Synth_base_mod.png[39m[38;5;124m'[39m)
+[1;32m     15[0m [38;5;66;03m# display images[39;00m
+
+File [0;32m~/Library/Python/3.9/lib/python/site-packages/matplotlib/image.py:1544[0m, in [0;36mimread[0;34m(fname, format)[0m
+[1;32m   1537[0m [38;5;28;01mif[39;00m [38;5;28misinstance[39m(fname, [38;5;28mstr[39m) [38;5;129;01mand[39;00m [38;5;28mlen[39m(parse[38;5;241m.[39murlparse(fname)[38;5;241m.[39mscheme) [38;5;241m>[39m [38;5;241m1[39m:
+[1;32m   1538[0m     [38;5;66;03m# Pillow doesn't handle URLs directly.[39;00m
+[1;32m   1539[0m     [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m(
+[1;32m   1540[0m         [38;5;124m"[39m[38;5;124mPlease open the URL for reading and pass the [39m[38;5;124m"[39m
+[1;32m   1541[0m         [38;5;124m"[39m[38;5;124mresult to Pillow, e.g. with [39m[38;5;124m"[39m
+[1;32m   1542[0m         [38;5;124m"[39m[38;5;124m``np.array(PIL.Image.open(urllib.request.urlopen(url)))``.[39m[38;5;124m"[39m
+[1;32m   1543[0m         )
+[0;32m-> 1544[0m [38;5;28;01mwith[39;00m [43mimg_open[49m[43m([49m[43mfname[49m[43m)[49m [38;5;28;01mas[39;00m image:
+[1;32m   1545[0m     [38;5;28;01mreturn[39;00m (_pil_png_to_float_array(image)
+[1;32m   1546[0m             [38;5;28;01mif[39;00m [38;5;28misinstance[39m(image, PIL[38;5;241m.[39mPngImagePlugin[38;5;241m.[39mPngImageFile) [38;5;28;01melse[39;00m
+[1;32m   1547[0m             pil_to_array(image))
+
+File [0;32m~/Library/Python/3.9/lib/python/site-packages/PIL/ImageFile.py:126[0m, in [0;36mImageFile.__init__[0;34m(self, fp, filename)[0m
+[1;32m    122[0m [38;5;28mself[39m[38;5;241m.[39mdecodermaxblock [38;5;241m=[39m MAXBLOCK
+[1;32m    124[0m [38;5;28;01mif[39;00m is_path(fp):
+[1;32m    125[0m     [38;5;66;03m# filename[39;00m
+[0;32m--> 126[0m     [38;5;28mself[39m[38;5;241m.[39mfp [38;5;241m=[39m [38;5;28;43mopen[39;49m[43m([49m[43mfp[49m[43m,[49m[43m [49m[38;5;124;43m"[39;49m[38;5;124;43mrb[39;49m[38;5;124;43m"[39;49m[43m)[49m
+[1;32m    127[0m     [38;5;28mself[39m[38;5;241m.[39mfilename [38;5;241m=[39m fp
+[1;32m    128[0m     [38;5;28mself[39m[38;5;241m.[39m_exclusive_fp [38;5;241m=[39m [38;5;28;01mTrue[39;00m
+
+[0;31mFileNotFoundError[0m: [Errno 2] No such file or directory: 'figures/Orig_base_mod.png'
+
