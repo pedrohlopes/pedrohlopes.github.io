@@ -186,5 +186,10 @@ ipd.Audio('audios/sbrt_data/gabriela-from-male.wav')
 ipd.Audio('audios/sbrt_data/gabriela-from-female.wav')
 ```
 
+## Phoneme transcriptions
 
+## Voice conversion and Multispeaker TTS
 
+## Emotion and style control
+
+## Phoneme-level controls
