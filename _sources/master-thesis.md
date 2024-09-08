@@ -131,3 +131,60 @@ ipd.Audio('audios/tensorspeech3.wav')
 &nbsp;
 
 A live demo for syntesizing speech with this trained voice can be accessed [here](https://www.kaggle.com/code/pedrohlopes/portuguese-tts-tensorflowtts-better-quality). We can hear that the overall quality improved a lot for this voice, but the phone ambiguities still confuse some pronunciations. 
+
+
+## SBRT 2023 Gender-aware voice transfer
+
+In this experiment, we aimed to measure the impact of gender-balanced data and the importance of transferring data from the same gender as the target voice. For this, we started by training the same neutral voice from the first experiment and the newly developed female voice dataset, with the exact same 10333 phrases as described in the [article](https://biblioteca.sbrt.org.br/articlefile/4464.pdf). From these pretrained models, we proceeded to a voice transfer experiment, where the female and male models were finetuned with other male and female voices, but with smaller amounts of data. Here are some examples of the resulting voices, from unseen text data.
+
+### Reference audio signals:
+
+**Text**: A melhoria da qualidade não interessa só a técnicos ou empresários.
+
+**Target voice - Male**
+
+```{code-cell} ipython3
+:tags: ["remove_input"]
+ipd.Audio('audios/sbrt_data/elson-original.wav')
+```
+**Target voice - Female**
+
+```{code-cell} ipython3
+:tags: ["remove_input"]
+ipd.Audio('audios/sbrt_data/gabriela-original.wav')
+```
+
+
+### Synthesized audio signals:
+**Text**: A melhoria da qualidade não interessa só a técnicos ou empresários.
+
+**Target voice - Male; Base model - Male**
+
+```{code-cell} ipython3
+:tags: ["remove_input"]
+ipd.Audio('audios/sbrt_data/elson-from-male.wav')
+```
+
+**Target voice - Male; Base model - Female**
+
+```{code-cell} ipython3
+:tags: ["remove_input"]
+ipd.Audio('audios/sbrt_data/elson-from-female.wav')
+```
+
+**Target voice - Female; Base model - Male**
+
+```{code-cell} ipython3
+:tags: ["remove_input"]
+ipd.Audio('audios/sbrt_data/gabriela-from-male.wav')
+```
+
+**Target voice - Female; Base model - Female**
+
+```{code-cell} ipython3
+:tags: ["remove_input"]
+ipd.Audio('audios/sbrt_data/gabriela-from-female.wav')
+```
+
+
+
