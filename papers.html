@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Papers &#8212; Pedro Leite — Research Hub</title>
+    <title>Research &#8212; Pedro Leite — Research Hub</title>
   
   
   
@@ -223,7 +223,7 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Research</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Papers</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Research</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datasets.html">Datasets</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Complementary material</span></p>
@@ -411,7 +411,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Papers</h1>
+    <h1>Research</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -426,6 +426,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#broadcast-quality-synthetic-narration-a-workflow-for-fine-grained-text-to-speech-intonation-and-emotion-control">Broadcast-quality synthetic narration: a workflow for fine-grained text-to-speech intonation and emotion control</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutral-tts-female-voice-corpus-in-brazilian-portuguese">Neutral TTS Female Voice Corpus in Brazilian Portuguese</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-corpus-of-neutral-voice-speech-in-brazilian-portuguese">A Corpus of Neutral Voice Speech in Brazilian Portuguese</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#blind-source-separation-from-music-recordings-through-deep-neural-networks">Blind Source Separation from Music Recordings through Deep Neural Networks</a></li>
 </ul>
             </nav>
         </div>
@@ -437,10 +438,9 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="papers">
-<h1>Papers<a class="headerlink" href="#papers" title="Link to this heading">#</a></h1>
-<p>Publications and the dissertation, most recent first. Each entry gives the one-line
-version; expand <strong>What we found</strong> for the numbers.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="research">
+<h1>Research<a class="headerlink" href="#research" title="Link to this heading">#</a></h1>
+<p>Just a brief condensation of my research outputs, with links to the full papers and companion pages.</p>
 <section id="increasing-the-robustness-of-brazilian-portuguese-voice-synthesis">
 <h2>Increasing the Robustness of Brazilian Portuguese Voice Synthesis<a class="headerlink" href="#increasing-the-robustness-of-brazilian-portuguese-voice-synthesis" title="Link to this heading">#</a></h2>
 <p><em>Pedro H. L. Leite.</em> MSc dissertation, COPPE/UFRJ, October 2024.
@@ -624,6 +624,30 @@ least glamorous and most reusable finding in the paper.</p>
 <p class="sd-card-text">Audio for all three experiments is in the <a class="reference internal" href="master-thesis.html"><span class="std std-doc">complementary material</span></a>.</p>
 </div>
 </details></section>
+<section id="blind-source-separation-from-music-recordings-through-deep-neural-networks">
+<h2>Blind Source Separation from Music Recordings through Deep Neural Networks<a class="headerlink" href="#blind-source-separation-from-music-recordings-through-deep-neural-networks" title="Link to this heading">#</a></h2>
+<p><em>Pedro H. L. Leite.</em> Graduation project, Electronics and Computer Engineering,
+Escola Politécnica/UFRJ, July 2021. Supervisor: Luiz Wagner Pereira Biscainho.</p>
+<p>Earlier work, on a different problem: pulling the individual instruments and the singing
+voice back out of a finished mix, using only open data. It reached state-of-the-art-comparable
+vocal separation and shipped as a web tool anyone could use.</p>
+<p><a class="reference external" href="http://www.repositorio.poli.ufrj.br/monografias/projpoli10034948.pdf">Graduation project (PDF)</a></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">What we found</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>The constraint was data.</strong> Separation datasets are few and small, so the project
+gathered the available open-source ones and built a cleaning and unification pass to get
+the most out of them. Two reference models were then retrained on that data alone —
+Spleeter, originally developed on a closed dataset, and Open-Unmix.</p>
+<p class="sd-card-text"><strong>The proposal.</strong> A U-Net variant that puts more signal-processing theory back into the
+architecture, using filters at several size proportions rather than one, so the network
+sees the spectrogram at multiple time-frequency resolutions at once.</p>
+<p class="sd-card-text"><strong>The result.</strong> Comparable to the state of the art for vocal separation: SDR 6.75 dB,
+SIR 14.56 dB, SAR 6.96 dB — trained entirely on open data.</p>
+<p class="sd-card-text"><strong>And it shipped.</strong> A web application with an interactive player, so separation was
+something the general public could actually try rather than a table of numbers.</p>
+</div>
+</details></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -697,6 +721,7 @@ least glamorous and most reusable finding in the paper.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#broadcast-quality-synthetic-narration-a-workflow-for-fine-grained-text-to-speech-intonation-and-emotion-control">Broadcast-quality synthetic narration: a workflow for fine-grained text-to-speech intonation and emotion control</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutral-tts-female-voice-corpus-in-brazilian-portuguese">Neutral TTS Female Voice Corpus in Brazilian Portuguese</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-corpus-of-neutral-voice-speech-in-brazilian-portuguese">A Corpus of Neutral Voice Speech in Brazilian Portuguese</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#blind-source-separation-from-music-recordings-through-deep-neural-networks">Blind Source Separation from Music Recordings through Deep Neural Networks</a></li>
 </ul>
   </nav></div>
 

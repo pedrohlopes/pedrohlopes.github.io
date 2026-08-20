@@ -1,7 +1,6 @@
-# Papers
+# Research
 
-Publications and the dissertation, most recent first. Each entry gives the one-line
-version; expand **What we found** for the numbers.
+Just a brief condensation of my research outputs, with links to the full papers and companion pages.
 
 ## Increasing the Robustness of Brazilian Portuguese Voice Synthesis
 
@@ -165,4 +164,32 @@ voice activity detection turned a failing pipeline into a working TTS system. It
 least glamorous and most reusable finding in the paper.
 
 Audio for all three experiments is in the [complementary material](master-thesis.md).
+```
+
+## Blind Source Separation from Music Recordings through Deep Neural Networks
+
+*Pedro H. L. Leite.* Graduation project, Electronics and Computer Engineering,
+Escola Politécnica/UFRJ, July 2021. Supervisor: Luiz Wagner Pereira Biscainho.
+
+Earlier work, on a different problem: pulling the individual instruments and the singing
+voice back out of a finished mix, using only open data. It reached state-of-the-art-comparable
+vocal separation and shipped as a web tool anyone could use.
+
+[Graduation project (PDF)](http://www.repositorio.poli.ufrj.br/monografias/projpoli10034948.pdf)
+
+```{dropdown} What we found
+**The constraint was data.** Separation datasets are few and small, so the project
+gathered the available open-source ones and built a cleaning and unification pass to get
+the most out of them. Two reference models were then retrained on that data alone —
+Spleeter, originally developed on a closed dataset, and Open-Unmix.
+
+**The proposal.** A U-Net variant that puts more signal-processing theory back into the
+architecture, using filters at several size proportions rather than one, so the network
+sees the spectrogram at multiple time-frequency resolutions at once.
+
+**The result.** Comparable to the state of the art for vocal separation: SDR 6.75 dB,
+SIR 14.56 dB, SAR 6.96 dB — trained entirely on open data.
+
+**And it shipped.** A web application with an interactive player, so separation was
+something the general public could actually try rather than a table of numbers.
 ```

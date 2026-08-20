@@ -35,6 +35,10 @@ the numbers a click away.
 - [A Corpus of Neutral Voice Speech in Brazilian
   Portuguese](https://link.springer.com/chapter/10.1007/978-3-030-98305-5_32) (PROPOR 2022)
 
+Earlier, and on a different problem: [Blind Source Separation from Music Recordings
+through Deep Neural Networks](http://www.repositorio.poli.ufrj.br/monografias/projpoli10034948.pdf),
+my graduation project (Escola Politécnica/UFRJ, 2021).
+
 ## Datasets
 
 Two professionally recorded single-speaker corpora for Brazilian Portuguese TTS — same
