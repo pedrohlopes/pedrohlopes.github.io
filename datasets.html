@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=03a17f2c" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=2c7b992e" />
   
   <!-- So that users can add custom icons -->
   <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
@@ -439,42 +439,18 @@
 <h1>Datasets<a class="headerlink" href="#datasets" title="Link to this heading">#</a></h1>
 <p>Two single-speaker Brazilian Portuguese speech corpora, recorded in a professional studio
 under one protocol: same sentences, same room, same distance, one male voice and one
-female voice. They were built to be <em>base voices</em> — enough neutral, high-quality speech to
-learn the language from, so that adapting to a new speaker only has to learn that
+female voice. They were built to be <em>base voices</em> — enough neutral, high-quality speech
+to learn the language from, so that adapting to a new speaker only has to learn that
 speaker.</p>
 <p>Both are free to download from Kaggle.</p>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text"><span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">~20 hours</span> <span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">10,333 segments</span> <span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">1 speaker</span></p>
-</div>
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-🎙️ Neutral Speech — Male</div>
-<p class="sd-card-text">Introduced at <strong>PROPOR 2022</strong>. Recorded with a Neumann TLM 102.</p>
-<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-success reference external" href="https://www.kaggle.com/datasets/mediatechlab/gneutralspeech"><span>💾 Download on Kaggle</span></a></span></p>
-<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-outline-secondary reference external" href="https://www.kaggle.com/code/pedrohlopes/portuguese-tts"><span>▶️ Live TTS demo</span></a></span></p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text"><span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">~20 hours</span> <span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">10,333 segments</span> <span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">1 speaker</span></p>
-</div>
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-🎙️ Neutral Speech — Female</div>
-<p class="sd-card-text">Introduced at <strong>SBrT 2023</strong>. Recorded with a Neumann TLM 103.</p>
-<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-success reference external" href="https://www.kaggle.com/datasets/mediatechlab/g-neutral-speech-female"><span>💾 Download on Kaggle</span></a></span></p>
-<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-outline-secondary reference external" href="https://gpa-smt-ufrj.github.io/sbrt2023"><span>🔊 Companion page</span></a></span></p>
-</div>
-</div>
-</div>
-</div>
-</div>
+<p><strong>Neutral Speech — Male.</strong> About 20 hours, 10,333 segments, recorded with a Neumann
+TLM 102. Introduced at PROPOR 2022.
+<a class="reference external" href="https://www.kaggle.com/datasets/mediatechlab/gneutralspeech">Download</a>
+· <a class="reference external" href="https://www.kaggle.com/code/pedrohlopes/portuguese-tts">Live TTS demo</a></p>
+<p><strong>Neutral Speech — Female.</strong> About 20 hours, 10,333 segments, recorded with a Neumann
+TLM 103. Introduced at SBrT 2023.
+<a class="reference external" href="https://www.kaggle.com/datasets/mediatechlab/g-neutral-speech-female">Download</a>
+· <a class="reference external" href="https://gpa-smt-ufrj.github.io/sbrt2023">Companion page</a></p>
 <section id="recording-specification">
 <h2>Recording specification<a class="headerlink" href="#recording-specification" title="Link to this heading">#</a></h2>
 <p>Both corpora share the same specification, which is what makes them usable as a matched
@@ -486,49 +462,49 @@ pair for gender-aware experiments.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>Speakers</strong></p></td>
+<tr class="row-even"><td><p>Speakers</p></td>
 <td><p>One male, one female (separate datasets)</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Duration</strong></p></td>
-<td><p>~20 hours each</p></td>
+<tr class="row-odd"><td><p>Duration</p></td>
+<td><p>About 20 hours each</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Segments</strong></p></td>
+<tr class="row-even"><td><p>Segments</p></td>
 <td><p>10,333 utterances each, matched sentence for sentence</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Style</strong></p></td>
+<tr class="row-odd"><td><p>Style</p></td>
 <td><p>Neutral emotion; regionalisms and prosody bias deliberately avoided</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Microphone</strong></p></td>
+<tr class="row-even"><td><p>Microphone</p></td>
 <td><p>Neumann TLM 102 (male) / TLM 103 (female), cardioid, 20 cm from the speaker</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Captured</strong></p></td>
+<tr class="row-odd"><td><p>Captured</p></td>
 <td><p>Broadcast <code class="docutils literal notranslate"><span class="pre">.wav</span></code>, 24-bit / 96 kHz</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Distributed</strong></p></td>
+<tr class="row-even"><td><p>Distributed</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">.wav</span></code>, 16-bit / 44.1 kHz, each with a matching <code class="docutils literal notranslate"><span class="pre">.txt</span></code> transcript</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Environment</strong></p></td>
+<tr class="row-odd"><td><p>Environment</p></td>
 <td><p>Professional studio; negligible noise floor, no audible accidental noise</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <p>The 20 cm distance and cardioid pattern were chosen to avoid proximity effect and room
-colouration respectively. 96 kHz is well beyond what TTS training needs today — the point
+colouration respectively. 96 kHz is well beyond what TTS training needs today; the point
 was to capture the material once, at a resolution that would not become the limiting
 factor for later research.</p>
 </section>
 <section id="how-the-corpora-were-built">
 <h2>How the corpora were built<a class="headerlink" href="#how-the-corpora-were-built" title="Link to this heading">#</a></h2>
 <p><strong>Text.</strong> Short sentences scraped from the website of <em>Jornal Nacional</em>, one of Brazil’s
-main TV news programmes, covering roughly two months of articles from May–June 2021.
+main TV news programmes, covering roughly two months of articles from May and June 2021.
 Advertisements, figures and footnotes were stripped.</p>
 <p><strong>Normalization by hand.</strong> Scraped news text is full of things that break the
 correspondence between spelling and pronunciation, so numerals, abbreviations and foreign
-names were rewritten as they would be read aloud: <code class="docutils literal notranslate"><span class="pre">2020</span></code> → <em>dois mil e vinte</em>, <code class="docutils literal notranslate"><span class="pre">TV</span></code> →
-<em>tê vê</em>, <code class="docutils literal notranslate"><span class="pre">Biden</span></code> → <em>Baiden</em>.</p>
+names were rewritten as they would be read aloud: <code class="docutils literal notranslate"><span class="pre">2020</span></code> became <em>dois mil e vinte</em>, <code class="docutils literal notranslate"><span class="pre">TV</span></code>
+became <em>tê vê</em>, <code class="docutils literal notranslate"><span class="pre">Biden</span></code> became <em>Baiden</em>.</p>
 <p><strong>Segmentation.</strong> Text was split at commas and periods; audio was cut to match using
-<a class="reference external" href="https://github.com/readbeyond/aeneas">Aeneas</a> forced alignment, targeting 5–10 second
+<a class="reference external" href="https://github.com/readbeyond/aeneas">Aeneas</a> forced alignment, targeting 5 to 10 second
 segments and avoiding anything over 20 seconds. Shorter segments let more examples fit in
 a batch without allocation spikes, which makes batch statistics more reliable.</p>
 <p><strong>Cleanup.</strong> <a class="reference external" href="https://github.com/wiseman/py-webrtcvad">py-webrtcvad</a> voice activity
@@ -551,14 +527,14 @@ alongside the English reference points:</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>Ours (male)</strong></p></td>
+<tr class="row-even"><td><p>Ours (male)</p></td>
 <td><p>BR</p></td>
 <td><p>20</p></td>
 <td><p>1 m</p></td>
 <td><p>96</p></td>
 <td><p>Professional, controlled</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Ours (female)</strong></p></td>
+<tr class="row-odd"><td><p>Ours (female)</p></td>
 <td><p>BR</p></td>
 <td><p>20</p></td>
 <td><p>1 f</p></td>
@@ -617,15 +593,15 @@ alongside the English reference points:</p>
 </tbody>
 </table>
 </div>
-<p>The gap these fill is narrow but specific: <strong>single-speaker, professionally recorded,
-long enough to pre-train on, and gender-balanced.</strong> Larger Brazilian Portuguese corpora
-exist, but they spread their hours across many speakers or many recording conditions —
-neither of which gives you a clean base voice.</p>
+<p>The gap these fill is narrow but specific: single-speaker, professionally recorded, long
+enough to pre-train on, and gender-balanced. Larger Brazilian Portuguese corpora exist,
+but they spread their hours across many speakers or many recording conditions, and
+neither gives you a clean base voice.</p>
 </section>
 <section id="citing">
 <h2>Citing<a class="headerlink" href="#citing" title="Link to this heading">#</a></h2>
 <p>If you use either corpus, please cite the corresponding paper — see the
-<a class="reference internal" href="papers.html"><span class="std std-doc">papers page</span></a> for full references:</p>
+<a class="reference internal" href="papers.html"><span class="std std-doc">papers page</span></a> for full references.</p>
 <ul class="simple">
 <li><p><strong>Male voice</strong> — Leite et al., <em>A Corpus of Neutral Voice Speech in Brazilian
 Portuguese</em>, PROPOR 2022.</p></li>

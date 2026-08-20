@@ -1,28 +1,6 @@
-/* Research hub tweaks on top of sphinx-book-theme + sphinx-design. */
-
-/* Each {button-link} renders in its own <p class="sd-card-text">, which stacks them
-   vertically. Lay consecutive buttons out as an inline row instead. */
-.sd-card-body > p.sd-card-text:has(> a.sd-btn) {
-  display: inline-block;
-  margin: 0 0.5rem 0.5rem 0;
-}
-
-/* The card title and the bold one-line hook beneath it are otherwise the same size and
-   weight, so they read as two competing headings. Size the title up. */
-.sd-card .sd-card-body .sd-card-title {
-  font-size: 1.2rem;
-  line-height: 1.35;
-  margin-bottom: 0.6rem;
-}
-
-/* Tables inside a "What we found" dropdown must not push the page sideways. */
+/* Keep wide tables inside a dropdown from pushing the page sideways on narrow screens. */
 details.sd-dropdown table {
   display: block;
   overflow-x: auto;
   max-width: 100%;
-}
-
-/* Keep the "What we found" dropdowns visually subordinate to the card they sit in. */
-.sd-card-body > details.sd-dropdown {
-  margin-top: 0.75rem;
 }
