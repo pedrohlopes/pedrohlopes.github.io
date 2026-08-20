@@ -16,10 +16,10 @@ The material lives on its own site, built alongside the paper:
 Three phonological contrasts, chosen because each one splits Brazilian varieties along a
 well-documented line:
 
-- **/s/ in coda** — *chiado* [ʃ], as in much of Rio, against the sibilant [s].
-- **/r/ in coda** — the *carioca* fricative, the alveolar tap, and the *caipira*
+- **/s/ in coda**: *chiado* [ʃ], as in much of Rio, against the sibilant [s].
+- **/r/ in coda**: the *carioca* fricative, the alveolar tap, and the *caipira*
   retroflex.
-- **/d/ and /t/ before [i]** — palatalized [dʒi] against non-palatalized [di].
+- **/d/ and /t/ before [i]**: palatalized [dʒi] against non-palatalized [di].
 
 ## What is on the companion page
 

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Research &#8212; Pedro Leite — Research Hub</title>
+    <title>Research</title>
   
   
   
@@ -199,8 +199,8 @@
       
     
     
-    <img src="_static/gpa-logo.jpg" class="logo__image only-light" alt="Pedro Leite — Research Hub - Home"/>
-    <img src="_static/gpa-logo.jpg" class="logo__image only-dark pst-js-only" alt="Pedro Leite — Research Hub - Home"/>
+    <img src="_static/gpa-logo.jpg" class="logo__image only-light" alt="Pedro Leite Research Hub - Home"/>
+    <img src="_static/gpa-logo.jpg" class="logo__image only-dark pst-js-only" alt="Pedro Leite Research Hub - Home"/>
   
   
 </a></div>
@@ -458,15 +458,15 @@ segmented into 10,333 matched utterances apiece. Both are <a class="reference in
 download</span></a>.</p>
 <p class="sd-card-text"><strong>Phonemes beat graphemes.</strong> Training on phonemizer transcriptions, with stress marks
 folded into single tokens, removed the open/closed vowel errors that plague homograph
-heterophones — <em>gosto</em>, <em>forma</em>, <em>colher</em> — which grapheme models simply cannot
+heterophones such as <em>gosto</em>, <em>forma</em> and <em>colher</em>, which grapheme models simply cannot
 disambiguate.</p>
 <p class="sd-card-text"><strong>Let the vocoder do the upsampling.</strong> Training text-to-mel at 22.05 kHz and letting the
 vocoder rebuild 44.1/48 kHz was not just faster: prosody converged <em>better</em>, because the
 acoustic model stopped spending capacity on noisy high-frequency content.</p>
 <p class="sd-card-text"><strong>Then control.</strong> A multispeaker VITS over roughly 80 hours and 43 speakers, RVC-based
 voice conversion for timbre transfer, emotion and style embeddings, and a web interface
-for phoneme-level pitch and duration edits — the work that ultimately put synthetic
-voices on air.</p>
+for phoneme-level pitch and duration edits. This is the work that ultimately put
+synthetic voices on air.</p>
 </div>
 </details></section>
 <section id="extracting-accent-features-in-spoken-brazilian-portuguese-without-sociolinguistic-labels">
@@ -474,7 +474,7 @@ voices on air.</p>
 <p><em>Pedro H. L. Leite, Pedro Benevenuto Valadares, Luiz W. P. Biscainho.</em>
 XLIV Brazilian Symposium on Telecommunications and Signal Processing (SBrT 2026),
 accepted. arXiv:2605.30457.</p>
-<p>You don’t need a big speaker embedding to hear an accent — you need to look at the right
+<p>You don’t need a big speaker embedding to hear an accent. You need to look at the right
 few milliseconds. Localized phonological features, 14 to 20 dimensions wide, beat
 768- and 1024-dimensional whole-utterance self-supervised embeddings at telling Brazilian
 accents apart.</p>
@@ -484,8 +484,8 @@ accents apart.</p>
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">What we found</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Speaker accuracy on three phonological contrasts, under balanced stratified
-cross-validation over 40, 51 and 20 annotated speakers respectively — the proposed
-features against the best whole-utterance embedding of any model tested:</p>
+cross-validation over 40, 51 and 20 annotated speakers respectively, comparing the
+proposed features against the best whole-utterance embedding of any model tested:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p class="sd-card-text">Task</p></th>
@@ -527,7 +527,7 @@ retroflex extremes, so the tap class carries the lowest recall, 0.71.</p>
 Luiz W. P. Biscainho.</em> AES International Conference on Artificial Intelligence and
 Machine Learning for Audio (AIMLA 2025), London, September 2025.</p>
 <p>Synthetic narration that listeners sometimes prefer to a professionally recorded
-voice-over — a production workflow where the director still gets to direct, with emotion
+voice-over. A production workflow where the director still gets to direct, with emotion
 chosen per passage and pitch and duration adjustable word by word.</p>
 <p><a class="reference external" href="https://aes2.org/publications/elibrary-page/?id=23020">AES e-Library</a></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -538,7 +538,7 @@ emotion classes, on a fine-tuned VITS2 synthesizer. The pipeline combines manual
 annotation, automatic emotion classification, and phoneme- and word-level pitch and
 duration adjustment.</p>
 <p class="sd-card-text"><strong>The result.</strong> The synthetic narration reached parity with professionally recorded
-voice-overs, with some listener preference for the synthetic take — precisely because it
+voice-overs, with some listener preference for the synthetic take, precisely because it
 can be tuned after the fact.</p>
 <p class="sd-card-text"><strong>Why it matters.</strong> Fine-grained control is what moves TTS from intelligible to
 broadcastable. A voice-over artist can be asked for another read; until you can edit
@@ -551,7 +551,7 @@ intonation at the word level, a synthetic voice cannot.</p>
 Luiz W. P. Biscainho.</em> XLI Brazilian Symposium on Telecommunications and Signal
 Processing (SBrT 2023), São José dos Campos, October 2023.</p>
 <p>A matching 20-hour female corpus, and evidence that transferring a voice across genders
-costs you. Speech production is anatomy, and the models learn that implicitly — so we
+costs you. Speech production is anatomy, and the models learn that implicitly, so we
 built the female counterpart to our male corpus and measured what happens when you cross
 the two.</p>
 <p><a class="reference external" href="https://biblioteca.sbrt.org.br/articlefile/4464.pdf">Paper (PDF)</a>
@@ -586,7 +586,7 @@ combination. Intelligibility, as word error rate against Whisper transcripts:</p
 </table>
 </div>
 <p class="sd-card-text"><strong>Same-gender transfer wins, asymmetrically.</strong> The male target degrades badly when warm
-started from a female model — more than double the error rate. The female target is
+started from a female model, at more than double the error rate. The female target is
 roughly tied either way on WER, but same-gender transfer still yields visibly sharper F0
 contours and energy distribution in the mel spectrograms.</p>
 <p class="sd-card-text"><strong>Speaker similarity agrees.</strong> d-vector cosine similarity against the mean ground-truth
@@ -610,12 +610,12 @@ once, then spend your scarce target-speaker data on timbre alone.</p>
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">What we found</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><strong>The base voice.</strong> Tacotron 2 with WaveGlow, 102k iterations over about six days on an
-NVIDIA Quadro RTX 8000. Prosody and accent came out natural but neutral — exactly the
+NVIDIA Quadro RTX 8000. Prosody and accent came out natural but neutral, exactly the
 intended starting point.</p>
 <p class="sd-card-text"><strong>Then the payoff.</strong> From that checkpoint, under eight minutes of a target speaker’s
 audio converged in hours to a voice clearly identifiable as theirs. Seventy-five minutes
 from CETUC did it noticeably better: fewer artifacts, better pronunciations.</p>
-<p class="sd-card-text"><strong>The lesson that made it work at all.</strong> The first attempts produced fluent nonsense —
+<p class="sd-card-text"><strong>The lesson that made it work at all.</strong> The first attempts produced fluent nonsense:
 the model never learned text-audio alignment. The cause was leading silence, non-uniform
 across the corpus, so the model could not predict when speech begins. Trimming it with
 voice activity detection turned a failing pipeline into a working TTS system. It is the
@@ -636,13 +636,13 @@ vocal separation and shipped as a web tool anyone could use.</p>
 <span class="sd-summary-text">What we found</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><strong>The constraint was data.</strong> Separation datasets are few and small, so the project
 gathered the available open-source ones and built a cleaning and unification pass to get
-the most out of them. Two reference models were then retrained on that data alone —
+the most out of them. Two reference models were then retrained on that data alone:
 Spleeter, originally developed on a closed dataset, and Open-Unmix.</p>
 <p class="sd-card-text"><strong>The proposal.</strong> A U-Net variant that puts more signal-processing theory back into the
 architecture, using filters at several size proportions rather than one, so the network
 sees the spectrogram at multiple time-frequency resolutions at once.</p>
 <p class="sd-card-text"><strong>The result.</strong> Comparable to the state of the art for vocal separation: SDR 6.75 dB,
-SIR 14.56 dB, SAR 6.96 dB — trained entirely on open data.</p>
+SIR 14.56 dB, SAR 6.96 dB, trained entirely on open data.</p>
 <p class="sd-card-text"><strong>And it shipped.</strong> A web application with an interactive player, so separation was
 something the general public could actually try rather than a table of numbers.</p>
 </div>

@@ -2,18 +2,18 @@
 
 Two single-speaker Brazilian Portuguese speech corpora, recorded in a professional studio
 under one protocol: same sentences, same room, same distance, one male voice and one
-female voice. They were built to be *base voices* — enough neutral, high-quality speech
+female voice. They were built to be *base voices*, with enough neutral, high-quality speech
 to learn the language from, so that adapting to a new speaker only has to learn that
 speaker.
 
 Both are free to download from Kaggle.
 
-**Neutral Speech — Male.** About 20 hours, 10,333 segments, recorded with a Neumann
+**Neutral Speech, male voice.** About 20 hours, 10,333 segments, recorded with a Neumann
 TLM 102. Introduced at PROPOR 2022.
 [Download](https://www.kaggle.com/datasets/mediatechlab/gneutralspeech)
 · [Live TTS demo](https://www.kaggle.com/code/pedrohlopes/portuguese-tts)
 
-**Neutral Speech — Female.** About 20 hours, 10,333 segments, recorded with a Neumann
+**Neutral Speech, female voice.** About 20 hours, 10,333 segments, recorded with a Neumann
 TLM 103. Introduced at SBrT 2023.
 [Download](https://www.kaggle.com/datasets/mediatechlab/g-neutral-speech-female)
 · [Companion page](https://gpa-smt-ufrj.github.io/sbrt2023)
@@ -84,10 +84,10 @@ neither gives you a clean base voice.
 
 ## Citing
 
-If you use either corpus, please cite the corresponding paper — see the
+If you use either corpus, please cite the corresponding paper. See the
 [research page](research.md) for full references.
 
-- **Male voice** — Leite et al., *A Corpus of Neutral Voice Speech in Brazilian
+- **Male voice.** Leite et al., *A Corpus of Neutral Voice Speech in Brazilian
   Portuguese*, PROPOR 2022.
-- **Female voice** — Leite et al., *Neutral TTS Female Voice Corpus in Brazilian
+- **Female voice.** Leite et al., *Neutral TTS Female Voice Corpus in Brazilian
   Portuguese*, SBrT 2023.
