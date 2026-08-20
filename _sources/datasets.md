@@ -85,7 +85,7 @@ neither gives you a clean base voice.
 ## Citing
 
 If you use either corpus, please cite the corresponding paper — see the
-[papers page](papers.md) for full references.
+[research page](research.md) for full references.
 
 - **Male voice** — Leite et al., *A Corpus of Neutral Voice Speech in Brazilian
   Portuguese*, PROPOR 2022.

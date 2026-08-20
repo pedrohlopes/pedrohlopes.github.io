@@ -19,12 +19,12 @@ What it takes to make Brazilian Portuguese TTS good enough to go on air — from
 models keep getting wrong, to prosody, emotion and speaker-identity controls on top.
 
 [Read the dissertation (PDF)](https://w1files.solucaoatrio.net.br/atrio/ufrj-pee_upl//THESIS/10004572/122018208_20250213151626802.pdf)
-· [Summary](papers.md)
+· [Summary](research.md)
 
 ## Papers
 
-Most recent first. The [papers page](papers.md) gives each one a one-line summary with
-the numbers a click away.
+Most recent first. The [research page](research.md) gives each one a one-line summary
+with the numbers a click away.
 
 - [Extracting accent features in spoken Brazilian Portuguese without sociolinguistic
   labels](https://arxiv.org/abs/2605.30457) (SBrT 2026)
@@ -55,8 +55,11 @@ were built, and how they compare with the other Brazilian Portuguese speech data
 
 ## Complementary material
 
-The [complementary material](master-thesis.md) walks through every experiment in the
-dissertation with the audio to match — the base neutral voice, voice transfer from eight
-minutes of target speech, the gender-aware transfer comparison, grapheme-versus-phoneme
-pronunciations of ambiguous words like *gosto*, *forma* and *colher*, and the voice
-conversion, multispeaker and prosody-control samples.
+The [material for the master thesis](master-thesis.md) walks through every experiment in
+the dissertation with the audio to match — the base neutral voice, voice transfer from
+eight minutes of target speech, the gender-aware transfer comparison,
+grapheme-versus-phoneme pronunciations of ambiguous words like *gosto*, *forma* and
+*colher*, and the voice conversion, multispeaker and prosody-control samples.
+
+The [material for SBrT 2026](accent-features.md) covers the accent-features paper: audio
+clips and spectrograms for each accent class, and the full ablation grid.
