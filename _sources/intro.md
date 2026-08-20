@@ -23,19 +23,17 @@ models keep getting wrong, to prosody, emotion and speaker-identity controls on 
 
 ## Papers
 
-Five publications, most recent first. The [papers page](papers.md) gives each one a
-one-line summary with the numbers a click away.
+Most recent first. The [papers page](papers.md) gives each one a one-line summary with
+the numbers a click away.
 
-- **Extracting accent features in spoken Brazilian Portuguese without sociolinguistic
-  labels** — SBrT 2026. You don't need a big speaker embedding to hear an accent; you
-  need to look at the right few milliseconds.
-- **Broadcast-quality synthetic narration** — AES AIMLA 2025. Synthetic narration that
-  listeners sometimes prefer to a professionally recorded voice-over.
-- **Neutral TTS Female Voice Corpus in Brazilian Portuguese** — SBrT 2023. A matching
-  20-hour female corpus, and evidence that transferring a voice across genders costs you.
-- **A Corpus of Neutral Voice Speech in Brazilian Portuguese** — PROPOR 2022. The
-  20-hour male neutral corpus, and proof that minutes of target audio are enough on top
-  of it.
+- [Extracting accent features in spoken Brazilian Portuguese without sociolinguistic
+  labels](https://arxiv.org/abs/2605.30457) (SBrT 2026)
+- [Broadcast-quality synthetic narration](https://aes2.org/publications/elibrary-page/?id=23020)
+  (AES AIMLA 2025)
+- [Neutral TTS Female Voice Corpus in Brazilian
+  Portuguese](https://biblioteca.sbrt.org.br/articlefile/4464.pdf) (SBrT 2023)
+- [A Corpus of Neutral Voice Speech in Brazilian
+  Portuguese](https://link.springer.com/chapter/10.1007/978-3-030-98305-5_32) (PROPOR 2022)
 
 ## Datasets
 

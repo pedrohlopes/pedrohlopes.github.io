@@ -383,3 +383,15 @@ ipd.Audio('audios/phoneme_control/ctrl_flat_pitch.wav')
 :tags: ["remove_input"]
 ipd.Audio('audios/phoneme_control/ctrl_pitch_pauses.wav')
 ```
+
+## Accent features (SBrT 2026)
+
+The work that followed this thesis moved from generating speech to characterising it:
+extracting Brazilian accent markers without sociolinguistic labels. It has its own
+complementary material, with audio clips and spectrograms for each accent class and the
+full ablation table:
+
+[Complementary material for "Extracting accent features in spoken Brazilian Portuguese
+without sociolinguistic labels"](https://gpa-smt-ufrj.github.io/accent-features)
+
+See the [papers page](papers.md) for a summary of the results.
