@@ -1,4 +1,4 @@
-# Complementary material for SBrT 2026
+# SBrT 2026
 
 Companion material for *Extracting accent features in spoken Brazilian Portuguese without
 sociolinguistic labels* (Leite, Valadares and Biscainho, SBrT 2026, arXiv:2605.30457).

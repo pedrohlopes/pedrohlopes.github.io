@@ -13,7 +13,7 @@ kernelspec:
   name: python3
 ---
 
-# Complementary material for Master Thesis
+# Master thesis
 
 During my research over TTS systems, some experiments were conducted when training and developing the AI systems for syntesizing robust and natural speech. Here, we provide a detailed log with audio examples for such experiments, hoping to clarify even more the documentation provided in my master thesis. 
 

@@ -1,7 +1,7 @@
-# Pedro Leite — Research Hub
+# Pedro Leite Research Hub
 
-MSc in Electrical Engineering (COPPE/UFRJ), Audio Processing Group (GPA) — speech
-synthesis, voice datasets and accent modelling for Brazilian Portuguese.
+MSc in Electrical Engineering & PhD Candidate (COPPE/UFRJ), Audio Processing Group (GPA) — speech
+synthesis and accent modelling for Brazilian Portuguese.
 
 Brazilian Portuguese is among the most widely spoken languages in the world and one of
 the worst served by open speech data. Most of the work collected here follows from that:
