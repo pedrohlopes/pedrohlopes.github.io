@@ -1,6 +1,6 @@
 # Pedro Leite Research Hub
 
-I'm a MSc in Electrical Engineering and a PhD Candidate at COPPE/UFRJ, working at the Audio Processing Group (GPA) with speech synthesis and accent modelling for Brazilian Portuguese.
+I have a Master's in Electrical Engineering and I'm currently doing my PhD at COPPE/UFRJ. I work with the Audio Processing Group (GPA), focusing on speech synthesis and accent modelling for Brazilian Portuguese.
 
 This portal is a collection of my research, for easy and public access.
 
